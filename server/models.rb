@@ -1,6 +1,8 @@
 require_relative 'database'
 
 class Country < ActiveRecord::Base
+  has_many :airports
+  has_many :regions
 end
 
 class Region  < ActiveRecord::Base
